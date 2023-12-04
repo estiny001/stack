@@ -54,6 +54,9 @@ Other enhancements:
   be muted if unwanted.
 * The compiler version is included in Stack's build message (e.g.
   `stack> build (lib + exe + test) with ghc-9.4.8`).
+* Add option `--filter <item>` to Stack's `ls dependencies text` command to
+  filter out an item from the results, if present. The item can be `$locals` for
+  all local packages.
 
 Bug fixes:
 * Fix the `Curator` instance of `ToJSON`, as regards `expect-haddock-failure`.
